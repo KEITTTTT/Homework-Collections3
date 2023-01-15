@@ -2,6 +2,7 @@ import java.lang.reflect.MalformedParameterizedTypeException;
 import java.util.HashMap;
 import java.util.Map;
 
+
 public class Task3 {
     private final Map<String, Integer> map = new HashMap<>();
 

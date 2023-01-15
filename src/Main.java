@@ -4,6 +4,7 @@ import product.Product;
 import product.ProductList;
 import product.Recipe;
 
+
 import java.util.*;
 
 public class Main {
@@ -33,8 +34,8 @@ public class Main {
         products.add(eggs);
         Recipe salad = new Recipe("Оливье");
         salad.addProduct(sausage, 1);
-        salad.addProduct(eggs,5);
-        salad.addProduct(polkaDots,1);
+        salad.addProduct(eggs, 5);
+        salad.addProduct(polkaDots, 1);
         System.out.println(salad);
         System.out.println(salad.getRecipePrice());
 
@@ -67,7 +68,7 @@ public class Main {
         phoneBook.addPhone(new FullName("Егор", "Егоров"), "85625265545");
 
 
-        for (Map.Entry<FullName,String> entry: phoneBook.getEntries()){
+        for (Map.Entry<FullName, String> entry : phoneBook.getEntries()) {
             System.out.printf("%s - %s%n", entry.getKey(), entry.getValue());
         }
 
@@ -96,30 +97,23 @@ public class Main {
         System.out.println(listMap.getTransformedCollection());
 
 
-
 //Создайте Map<Integer, String>, заполните ее 10 произвольными значениями.
 // Выведите в консоль всё содержимое коллекции в порядке добавления (в формате ”ключ:значение").
-        Map< Integer, String> orderedMap = new LinkedHashMap<>();
-        orderedMap.put(1,"номер 1");
-        orderedMap.put(2,"номер 2");
-        orderedMap.put(3,"номер 3");
-        orderedMap.put(4,"номер 4");
-        orderedMap.put(5,"номер 5");
-        orderedMap.put(10,"номер 10");
-        orderedMap.put(7,"номер 7");
-        orderedMap.put(8,"номер 8");
-        orderedMap.put(9,"номер 9");
-        orderedMap.put(6,"номер 6");
+        Map<Integer, String> orderedMap = new LinkedHashMap<>();
+        orderedMap.put(1, "номер 1");
+        orderedMap.put(2, "номер 2");
+        orderedMap.put(3, "номер 3");
+        orderedMap.put(4, "номер 4");
+        orderedMap.put(5, "номер 5");
+        orderedMap.put(10, "номер 10");
+        orderedMap.put(7, "номер 7");
+        orderedMap.put(8, "номер 8");
+        orderedMap.put(9, "номер 9");
+        orderedMap.put(6, "номер 6");
 
-        for (Map.Entry<Integer, String> entry: orderedMap.entrySet()){
+        for (Map.Entry<Integer, String> entry : orderedMap.entrySet()) {
             System.out.printf("%d:%s%n", entry.getKey(), entry.getValue());
         }
-
-
-
-
-
-
 
 
     }

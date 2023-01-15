@@ -8,7 +8,7 @@ public class Product {
 
 
     public Product(String name, double price) {
-        if(name==null || name.isBlank() || price<0){
+        if (name == null || name.isBlank() || price < 0) {
             throw new IllegalArgumentException("Заполнить карточку товара полностью");
         }
         this.name = name;
@@ -28,7 +28,7 @@ public class Product {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Product product = (Product) o;
-        return Objects.equals(name,product.name);
+        return Objects.equals(name, product.name);
     }
 
     @Override

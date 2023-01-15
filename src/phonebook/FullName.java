@@ -2,6 +2,7 @@ package phonebook;
 
 import java.util.Objects;
 
+
 public class FullName {
     private final String firstName;
     private final String lastname;
